@@ -1,0 +1,137 @@
+/* FONTES */
+/* Rubik Moonrocks */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Moonrocks&display=swap');
+/* GERAL*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#container {
+    overflow: hidden;
+}
+
+#container-head {
+width: 100vw;
+height: calc(100vh - 80px);
+background-color: rgb(93, 88, 182);
+display: flex;
+}
+
+#navigation-logo {
+    font-size: 32px;
+    color: white;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.9));
+}
+
+#navigation {
+    background: linear-gradient(160deg, rgb(93, 88, 182),rgb(51, 45, 165),rgb(51, 45, 165),rgb(163, 45, 165));
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    
+}
+
+#navigation ul {
+    display: flex;
+    font-size: 22px;
+    list-style: none;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 700;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.8));
+}
+
+#navigation ul li {
+    margin: 0px 30px;
+}
+
+#navigation-social i {
+    margin: 0px 10px;
+    font-size: 22px;
+}
+
+#container #content-hero-1 {
+   
+    height:calc(100vh - 80px);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#container #content-hero-1 img {
+    width: 400px;
+    height: 400px;
+    transform: translateY(100px);
+    animation: animarrosto 4s infinite;
+    border-radius: 3%;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.6));
+}
+
+@keyframes animarrosto {
+    0%{ transform: translateY(150px);}
+    50%{ transform: translateY(170px);}
+    100%{ transform: translateY(150px);}
+    
+}
+
+#container #content-hero-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
+}
+
+#content-hero-message {
+    width: 80%;
+
+
+
+}
+
+#content-hero-message h1 {
+    font-family: 'Rubik Moonrocks';
+}
+
+#content-hero-message p {
+    font-family: 'Poppins';
+}
+
+
+
+
+/* CONTAINER 2 */
+
+#container-2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(106, 105, 140);
+    flex-direction: column;
+}
+
+#container-skills {
+    display: flex;
+    width: 100%;
+}
+
+#skills-left {
+    background-color: aqua;
+    width: 50%;
+}
+
+#skills-right {
+    width: 50%;
+    background-color: aqua;
+}
