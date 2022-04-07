@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Moonrocks&display=swap');
+/* Lobster*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* GERAL*/
 * {
     box-sizing: border-box;
@@ -123,7 +126,8 @@ display: flex;
 }
 
 #container-2 h1 {
-    font-family: 'Poppins';
+    font-family: 'Lobster';
+    font-size: 52px;
     color: white;
     font-weight: 800;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
@@ -131,7 +135,7 @@ display: flex;
 
 #container-skills {
     display: flex;
-    width: 80%;
+    width: 60%;
     background-color: rgba(205, 255, 255, 0.3);
     font-family: 'Poppins';
     color: white;
@@ -168,3 +172,19 @@ display: flex;
 }
 
 #skills-right h3 {    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));}
+
+
+#container-skills #skills-left input {
+   margin: 20px 0px;
+}
+
+#container-skills #skills-right input {
+    margin: 20px 0px;
+}
+
+
+#slider::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    border-radius: 5px;
+    -webkit-appearance: none;
+}

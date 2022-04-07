@@ -51,29 +51,30 @@
         <!-- Container 2 -->
 
         <div id="container-2">
-            <h1>SKILLS</h1>
+            <h1>Skills</h1>
             <br><br>
             <div id="container-skills">
                 <div id="skills-left">
                     <div id="skill-html">
                         <h3>HTML</h3>
                         <i class="fa-brands fa-html5"></i>
-                        <input type="range" min="0" max="100" value="60">
+                        <input id="slider" type="range" min="0" max="100" value="60">
+                        
                     </div>
                     <div id="skill-css">
                         <h3>CSS</h3>
                         <i class="fa-brands fa-css3"></i>
-                        <input type="range" min="0" max="100" value="70">
+                        <input id="slider" type="range" min="0" max="100" value="70">
                     </div>
                     <div id="skill-js">
                         <h3>Javascript</h3>
                         <i class="fa-brands fa-js-square"></i>
-                        <input type="range" min="0" max="100" value="20">
+                        <input id="slider" type="range" min="0" max="100" value="20">
                     </div>
                     <div id="skill-bootstrap">
                         <h3>Bootstrap</h3>
                         <i class="fa-brands fa-bootstrap"></i>
-                        <input type="range" min="0" max="100" value="20">
+                        <input id="slider" type="range" min="0" max="100" value="20">
                     </div>
 
                 </div>
@@ -81,17 +82,22 @@
                     <div id="skill-jQuery">
                         <h3>jQuery</h3>
                         <i class="fa-brands fa-js-square"></i>
-                        <input type="range" min="0" max="100" value="15">
+                        <input id="slider" type="range" min="0" max="100" value="15">
                     </div>
                     <div id="skill-php">
                         <h3>Php</h3>
                         <i class="fa-brands fa-php"></i>
-                        <input type="range" min="0" max="100" value="15">
+                        <input id="slider" type="range" min="0" max="100" value="15">
                     </div>
                     <div id="skill-SQL">
                         <h3>SQL Database </h3>
                         <i class="fa-solid fa-database"></i>
-                        <input type="range" min="0" max="100" value="40">
+                        <input id="slider" type="range" min="0" max="100" value="40">
+                    </div>
+                    <div id="skill-github">
+                        <h3>Git Hub </h3>
+                        <i class="fa-brands fa-github"></i>
+                        <input id="slider" type="range" min="0" max="100" value="40">
                     </div>
                 </div>
             </div>
@@ -110,7 +116,14 @@
 
 
 
-
+<script>
+    var slider = document.getElementById("slider");
+var val = document.getElementById("value");
+slider.oninput = function() {
+  var active = 250 * (this.value / 100);
+  val.style.width = active + 'px';
+}
+</script>
 
 
 
