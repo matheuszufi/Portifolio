@@ -119,19 +119,52 @@ display: flex;
     align-items: center;
     background-color: rgb(106, 105, 140);
     flex-direction: column;
+    justify-content: center;
+}
+
+#container-2 h1 {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 800;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
 }
 
 #container-skills {
     display: flex;
-    width: 100%;
+    width: 80%;
+    background-color: rgba(205, 255, 255, 0.3);
+    font-family: 'Poppins';
+    color: white;
+    border-radius: 5px;
+}
+
+#container-skills i { 
+    font-size: 30px;
+}
+
+#container-skills input {
+
 }
 
 #skills-left {
-    background-color: aqua;
+   padding: 15px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+#skills-left h3 {    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));}
+
 #skills-right {
+    padding: 15px;
     width: 50%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
+#skills-right h3 {    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));}
