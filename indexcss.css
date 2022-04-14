@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth;}
+
 body {
     display: flex;
     flex-direction: column;
@@ -225,9 +227,6 @@ a {
     }
 }
 
-
-
-
 /*   CONTAINER 2   */
 
 
@@ -243,22 +242,17 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: 'Poppins';
 }
 
-#skills-down {
+#skills-left {
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 70%;
     background-color: rgba(118, 118, 118, 0.317);
     justify-content: center;
-
-}
-
-#skills-down {
+  /*  background:linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 74, 177, 0.447)); */
     font-family: 'Poppins';
-    background:linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 74, 177, 0.447));
 }
 
 .skills-card {
@@ -269,21 +263,18 @@ a {
     align-items: center;
     text-align: center;
     backdrop-filter: blur(5px);
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 80%;
 }
 
-input {
-    width: 50vw;
-    border: none; 
-    
-}
+
 
 #container-skills::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100c;
     height: 200%;
     background: linear-gradient(rgb(255, 33, 33), rgba(253, 42, 102, 0.4));
     clip-path: circle(20% at 10% 90%);
