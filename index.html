@@ -2,110 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/c551bd4cf4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="indexcss.css">
+  <meta charset="UTF-8">
+  <title>Matheus Zufi Portfolio</title>
+  <link rel="stylesheet" href="indexcss.css">
+  </link>
+  <script src="https://kit.fontawesome.com/c551bd4cf4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="container">
-
-        <nav id="navigation">
-            <div id="navigation-logo">
-                <h1 id="logo">MZ</h1>
-            </div>
-            <div id="navigation-list">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Contato</a></li>
-                </ul>
-            </div>
-            <div id="navigation-social">
-                <ul>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </ul>
-            </div>
-
-        </nav>
-        <div id="container-head">
-            <div id="content-hero-1">
-                <img src="imagens/eu.png">
-            </div>
-            <div id="content-hero-2">
-                <div id="content-hero-message">
-                    <h1>Bem vindo ao meu portifólio!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt odit dignissimos, cupiditate
-                        perspiciatis autem praesentium dicta qui eos voluptas quasi tempore, porro omnis nostrum fugit.
-                        Sed deserunt voluptate sequi.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Container 2 -->
-
-        <div id="container-2">
-            <h1>Skills</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis delectus aut consectetur quisquam consequatur distinctio ea asperiores ex non laboriosam quas omnis nihil vel, fuga ipsum harum in repellendus placeat.wha</p>
-            <br><br>
-            <div id="container-skills">
-                <div id="skills-left">
-                    <div id="skill-html">
-                        <h3>HTML</h3>
-                        <i class="fa-brands fa-html5"></i>
-                        <input id="slider" type="range" min="0" max="100" value="60">
-                        
-                    </div>
-                    <div id="skill-css">
-                        <h3>CSS</h3>
-                        <i class="fa-brands fa-css3"></i>
-                        <input id="slider" type="range" min="0" max="100" value="70">
-                    </div>
-                    <div id="skill-js">
-                        <h3>Javascript</h3>
-                        <i class="fa-brands fa-js-square"></i>
-                        <input id="slider" type="range" min="0" max="100" value="20">
-                    </div>
-                    <div id="skill-bootstrap">
-                        <h3>Bootstrap</h3>
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <input id="slider" type="range" min="0" max="100" value="20">
-                    </div>
-
-                </div>
-                <div id="skills-right">
-                    <div id="skill-jQuery">
-                        <h3>jQuery</h3>
-                        <i class="fa-brands fa-js-square"></i>
-                        <input id="slider" type="range" min="0" max="100" value="15">
-                    </div>
-                    <div id="skill-php">
-                        <h3>Php</h3>
-                        <i class="fa-brands fa-php"></i>
-                        <input id="slider" type="range" min="0" max="100" value="15">
-                    </div>
-                    <div id="skill-SQL">
-                        <h3>SQL Database </h3>
-                        <i class="fa-solid fa-database"></i>
-                        <input id="slider" type="range" min="0" max="100" value="40">
-                    </div>
-                    <div id="skill-github">
-                        <h3>Git Hub </h3>
-                        <i class="fa-brands fa-github"></i>
-                        <input id="slider" type="range" min="0" max="100" value="40">
-                    </div>
-                </div>
-            </div>
 
 
 
-        </div>
+  <div id="cursor-principal"></div>
+  <div id="cursor1"></div>
+  <div id="cursor2"></div>
+  <div id="cursor3"></div>
+  <div id="cursor4"></div>
+  <div id="cursor5"></div>
+  <div id="cursor6"></div>
+  <div id="cursor7"></div>
+  <div id="cursor8"></div>
+  <div id="cursor9"></div>
+  <div id="cursor10"></div>
+  <div id="cursor11"></div>
+  <div id="cursor12"></div>
+  <div id="cursor13"></div>
+  <div id="cursor14"></div>
+  <div id="cursor15"></div>
+  <div id="cursor16"></div>
+  <div id="cursor17"></div>
+  <div id="cursor18"></div>
+  <div id="cursor19"></div>
+  <div id="cursor20"></div>
+
+
+
+  <canvas style="position: absolute; top: 0; z-index: 5; opacity: 1;"></canvas>
 
 
 
@@ -116,20 +48,366 @@
 
 
 
+  <script>
 
-<script>
-    var slider = document.getElementById("slider");
-var val = document.getElementById("value");
-slider.oninput = function() {
-  var active = 250 * (this.value / 100);
-  val.style.width = active + 'px';
-}
-</script>
+    var cursorprincipal = document.getElementById('cursor-principal');
+    var cursor = document.getElementById('cursor1');
+    window.onmousemove = function (e) {
+
+      cursorprincipal.style.left = e.clientX + 'px';
+      cursorprincipal.style.top = e.clientY + 'px';
+
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      var randNum = Math.floor(Math.random() * 200) - 100;
+      var randNum2 = Math.floor(Math.random() * 200) - 100;
+
+      cursor.style.left = e.clientX + randNum + 'px';
+      cursor.style.top = e.clientY + randNum2 + 'px';
+
+      //cursor 2
+      cursor2.style.left = e.clientX + 'px';
+      cursor2.style.top = e.clientY + 'px';
+
+      var randNum3 = Math.floor(Math.random() * 200) - 100;
+      var randNum4 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor2.style.left = e.clientX + randNum3 + 'px';
+      cursor2.style.top = e.clientY + randNum4 + 'px';
+
+      //cursor 3
+      cursor3.style.left = e.clientX + 'px';
+      cursor3.style.top = e.clientY + 'px';
+
+      var randNum5 = Math.floor(Math.random() * 200) - 100;
+      var randNum6 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor3.style.left = e.clientX + randNum5 + 'px';
+      cursor3.style.top = e.clientY + randNum6 + 'px';
+
+      //cursor 4
+      cursor4.style.left = e.clientX + 'px';
+      cursor4.style.top = e.clientY + 'px';
+
+      var randNum7 = Math.floor(Math.random() * 200) - 100;
+      var randNum8 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor4.style.left = e.clientX + randNum7 + 'px';
+      cursor4.style.top = e.clientY + randNum8 + 'px';
+
+      //cursor 5
+      cursor5.style.left = e.clientX + 'px';
+      cursor5.style.top = e.clientY + 'px';
+
+      var randNum9 = Math.floor(Math.random() * 200) - 100;
+      var randNum10 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor5.style.left = e.clientX + randNum9 + 'px';
+      cursor5.style.top = e.clientY + randNum10 + 'px';
+
+      //cursor 6
+      cursor6.style.left = e.clientX + 'px';
+      cursor6.style.top = e.clientY + 'px';
+
+      var randNum11 = Math.floor(Math.random() * 200) - 100;
+      var randNum12 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor6.style.left = e.clientX + randNum11 + 'px';
+      cursor6.style.top = e.clientY + randNum12 + 'px';
+
+      //cursor 7
+      cursor7.style.left = e.clientX + 'px';
+      cursor7.style.top = e.clientY + 'px';
+
+      var randNum13 = Math.floor(Math.random() * 200) - 100;
+      var randNum14 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor7.style.left = e.clientX + randNum13 + 'px';
+      cursor7.style.top = e.clientY + randNum14 + 'px';
+
+      //cursor 8
+      cursor8.style.left = e.clientX + 'px';
+      cursor8.style.top = e.clientY + 'px';
+
+      var randNum15 = Math.floor(Math.random() * 200) - 100;
+      var randNum16 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor8.style.left = e.clientX + randNum15 + 'px';
+      cursor8.style.top = e.clientY + randNum16 + 'px';
+
+      //cursor 9
+      cursor9.style.left = e.clientX + 'px';
+      cursor9.style.top = e.clientY + 'px';
+
+      var randNum17 = Math.floor(Math.random() * 200) - 100;
+      var randNum18 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor9.style.left = e.clientX + randNum17 + 'px';
+      cursor9.style.top = e.clientY + randNum18 + 'px';
+
+      //cursor 10
+      cursor10.style.left = e.clientX + 'px';
+      cursor10.style.top = e.clientY + 'px';
+
+      var randNum19 = Math.floor(Math.random() * 200) - 100;
+      var randNum20 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor10.style.left = e.clientX + randNum19 + 'px';
+      cursor10.style.top = e.clientY + randNum20 + 'px';
+
+      //cursor 11      
+      cursor11.style.left = e.clientX + 'px';
+      cursor11.style.top = e.clientY + 'px';
+
+      var randNum21 = Math.floor(Math.random() * 200) - 100;
+      var randNum22 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor11.style.left = e.clientX + randNum21 + 'px';
+      cursor11.style.top = e.clientY + randNum22 + 'px';
+
+      //cursor 12
+      cursor12.style.left = e.clientX + 'px';
+      cursor12.style.top = e.clientY + 'px';
+
+      var randNum23 = Math.floor(Math.random() * 200) - 100;
+      var randNum24 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor12.style.left = e.clientX + randNum23 + 'px';
+      cursor12.style.top = e.clientY + randNum24 + 'px';
+
+      //cursor 13
+      cursor13.style.left = e.clientX + 'px';
+      cursor13.style.top = e.clientY + 'px';
+
+      var randNum25 = Math.floor(Math.random() * 200) - 100;
+      var randNum26 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor13.style.left = e.clientX + randNum25 + 'px';
+      cursor13.style.top = e.clientY + randNum26 + 'px';
+
+      //cursor 14
+      cursor14.style.left = e.clientX + 'px';
+      cursor14.style.top = e.clientY + 'px';
+
+      var randNum27 = Math.floor(Math.random() * 200) - 100;
+      var randNum28 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor14.style.left = e.clientX + randNum27 + 'px';
+      cursor14.style.top = e.clientY + randNum28 + 'px';
+
+      //cursor 15
+      cursor15.style.left = e.clientX + 'px';
+      cursor15.style.top = e.clientY + 'px';
+
+      var randNum29 = Math.floor(Math.random() * 200) - 100;
+      var randNum30 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor15.style.left = e.clientX + randNum29 + 'px';
+      cursor15.style.top = e.clientY + randNum30 + 'px';
+
+      //cursor 16
+      cursor16.style.left = e.clientX + 'px';
+      cursor16.style.top = e.clientY + 'px';
+
+      var randNum31 = Math.floor(Math.random() * 200) - 100;
+      var randNum32 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor16.style.left = e.clientX + randNum31 + 'px';
+      cursor16.style.top = e.clientY + randNum32 + 'px';
+
+      //cursor 17
+      cursor17.style.left = e.clientX + 'px';
+      cursor17.style.top = e.clientY + 'px';
+
+      var randNum33 = Math.floor(Math.random() * 200) - 100;
+      var randNum34 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor17.style.left = e.clientX + randNum33 + 'px';
+      cursor17.style.top = e.clientY + randNum34 + 'px';
+
+      //cursor 18
+      cursor18.style.left = e.clientX + 'px';
+      cursor18.style.top = e.clientY + 'px';
+
+      var randNum35 = Math.floor(Math.random() * 200) - 100;
+      var randNum36 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor18.style.left = e.clientX + randNum35 + 'px';
+      cursor18.style.top = e.clientY + randNum36 + 'px';
+
+      //cursor 19
+      cursor19.style.left = e.clientX + 'px';
+      cursor19.style.top = e.clientY + 'px';
+
+      var randNum37 = Math.floor(Math.random() * 200) - 100;
+      var randNum38 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor19.style.left = e.clientX + randNum37 + 'px';
+      cursor19.style.top = e.clientY + randNum38 + 'px';
+
+      //cursor 20
+      cursor20.style.left = e.clientX + 'px';
+      cursor20.style.top = e.clientY + 'px';
+
+      var randNum39 = Math.floor(Math.random() * 200) - 100;
+      var randNum40 = Math.floor(Math.random() * 200) - 100;
+
+
+      cursor20.style.left = e.clientX + randNum39 + 'px';
+      cursor20.style.top = e.clientY + randNum40 + 'px';
+
+
+    }
+
+
+
+  </script>
+
+
+  <script>
+
+    var t = 0;
+    var c = document.querySelector("canvas");
+    var $ = c.getContext('2d');
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    $.fillStyle = 'hsla(0,0%,0%,1)';
+
+    window.addEventListener('resize', function () {
+      c.width = window.innerWidth;
+      c.height = window.innerHeight;
+    }, false);
+
+    function draw() {
+      $.globalCompositeOperation = 'source-over';
+      $.fillStyle = 'hsla(0,0%,0%,.1)';
+      $.fillRect(0, 0, c.width, c.height);
+      var foo, i, j, r;
+      foo = Math.sin(t) * 2 * Math.PI;
+      for (i = 0; i < 2000; ++i) {              // quantidade de particulas
+        r = 900 * Math.sin(i * foo);
+        $.globalCompositeOperation = '';
+        $.fillStyle = 'hsla(' + i + 12 + ',100%, 60%,1)';
+        $.beginPath();
+        $.arc(Math.sin(i) * r + (c.width / 2),
+          Math.cos(i) * r + (c.height / 2),
+          1.5, 0, Math.PI * 6000);
+        $.fill();
+
+      }
+      t += 0.00000059;    // velocidade das particulas
+
+    };
+
+    function run() {
+      window.requestAnimationFrame(run);
+      draw();
+    }
+    run();
+  </script>
+
+  <div id="container">
+
+    <div id="header">
+      <div id="header-logo">
+        <h1 style="color:white">MZ</h1>
+      </div>
+
+      <div id="header-menu">
+        <ul>
+          <li class="lista">Home</li>
+          <li class="lista">Skills</li>
+          <li class="lista">Projetos</li>
+        </ul>
+      </div>
+
+      <div id="header-social">
+        <a href="https://github.com/matheuszufi"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matheus-zufi-leite-b82a28223/"><i class="fa-brands fa-linkedin"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  
+    <div id="container-hero">
+      <div id="container-hero-left">
+       <!-- <div id="container-matheus">
+          <img style="width: 50%;"src="matheus.png">
+        </div>-->
+      </div>
+      <div id="container-hero-right">
+        <h1>Matheus Zufi Leite Portifolio</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste eveniet nisi assumenda, ipsum hic, sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
+        <button>Conheça mais o meu trabalho</button>
+      
+      </div>
+
+
 
 
 
 
     </div>
+  
+  </div>
+
+
+  <div id="container-skills">
+    <div id="skills-top">
+      <h1>Skills</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <p>Nesciunt iste eveniet nisi assumenda, ipsum hic, sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
+    </div>
+
+    <div id="skills-down">
+      <div class="skills-card">
+        <div id="html-card">
+          <h3>HTML</h3>
+          <p>70%</p>
+          <input type="range" value="70">
+        </div>
+        <div id="css-card">
+          <h3>CSS</h3>
+          <p>70%</p>
+          <input type="range" value="70">
+        </div>
+        <div id="js-card">
+          <h3>JavaScript</h3>
+          <p>30%</p>
+          <input type="range" value="30">
+        </div>
+        <div id="php-card">
+          <h3>Php</h3>
+          <p>30%</p>
+          <input type="range" value="30">
+        </div>
+      </div>
+
+
+    </div>
+    
+  </div>
+
+
+
+
 </body>
 
 </html>
