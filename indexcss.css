@@ -31,7 +31,7 @@ text-transform: uppercase;
 backdrop-filter: blur(5px);
 border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 cursor:auto;
-
+position: fixed;
 }
 
 #header-logo {
@@ -40,6 +40,7 @@ cursor:auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(1px 1px 1px black);
     
 }
 
@@ -98,6 +99,8 @@ li {
 a {
     color: white;
     margin: 10px;
+    text-decoration: none;
+    filter:drop-shadow(1px 1px 1px black)
 }
 
 #header-social a i {
@@ -114,7 +117,7 @@ a {
     background-color: rgba(255, 255, 255, 0.4);
     z-index: 10;
     display: flex;
-    height: calc(100% - 80px);
+    height: 100vh;
     
 }
 
@@ -233,11 +236,12 @@ a {
 #container-skills {
     height: 100vh;
     width: 100%;
+    background: linear-gradient(180deg, white,white,white, rgb(248, 77, 228));
 }
 
 #skills-top {
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,15 +252,15 @@ a {
 #skills-left {
     display: flex;
     width: 50%;
-    height: 70%;
+    height: 60%;
     background-color: rgba(118, 118, 118, 0.317);
     justify-content: center;
   /*  background:linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 74, 177, 0.447)); */
     font-family: 'Poppins';
 }
 
-.skills-card {
-    width: 70%;
+#skills-card {
+   
     background-color: rgba(255, 255, 255, 0.161);
     display: flex;
     flex-direction: column;
@@ -264,7 +268,7 @@ a {
     text-align: center;
     backdrop-filter: blur(5px);
     border-radius: 8px;
-    height: 80%;
+   
 }
 
 
@@ -274,15 +278,15 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100c;
+    width: 100%;
     height: 200%;
-    background: linear-gradient(rgb(255, 33, 33), rgba(253, 42, 102, 0.4));
+    background: linear-gradient(rgb(255, 33, 33), rgba(253, 42, 147, 0.4));
     clip-path: circle(20% at 10% 90%);
     z-index: 0;
   }
 
 
-  #skills-down::before {
+  #skills-top::after {
     content: "";
     position: absolute;
     top: 0;
@@ -292,4 +296,16 @@ a {
     background: linear-gradient(rgb(255, 33, 33), rgba(253, 42, 102, 0.4));
     clip-path: circle(20% at 100% 70%);
     z-index: 0;
+  }
+
+input {
+    width: 50vw;
+}
+
+
+  /* CONTAINER PROJETOS  */
+
+  #container-projetos {
+      width: 100%;
+      height: 100vh;
   }
