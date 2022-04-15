@@ -367,25 +367,32 @@
 
 
   <div id="container-skills">
+    
     <div id="skills-top">
+      <br>
       <h1>Skills</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing
         elit. Dolor quos sapiente magni? Dolor quis voluptatem ea. Quae beatae cupiditate qui amet! Neque rem at
         nostrum. Dicta maxime aut pariatur commodi! </p>
     </div>
+    <div id="deco-skills">
+      <img src="imagens/skillsimg.png">
+    </div>
     <div id="skills-card">
+
       <div id="card-html">
         <h3>HTML</h3>
-        <p>70%</p>
+        <p id="demoHtml"></p>
+        <input name="html-percent" id="myRangeHtml" type="range" value="70">
+      </div>
 
-        <input name="html-percent" type="range" value="70">
-      </div>
-      <div id="card-html">
+      <div id="card-css">
         <h3>CSS</h3>
-        <p>70%</p>
-        <input type="range" value="70">
+        <p id="demoCss">%</p>
+        <input type="range" id="myRangeCss" value="70">
       </div>
-      <div id="card-html">
+
+      <div id="card-js">
         <h3>JS</h3>
         <p>30%</p>
         <input type="range" value="30">
@@ -400,7 +407,23 @@
 
     </div>
 
+    <script>
+      var slider = document.getElementById("myRangeHtml");
+      var output = document.getElementById("demoHtml");
+      output.innerHTML = slider.value + "%";
+      
+      slider.oninput = function() {
+        output.innerHTML = this.value + "%";
+      }
 
+      var slider2 = document.getElementById("myRangeCss");
+      var output2 = document.getElementById("demoCss");
+      output2.innerHTML = slider.value + "%";
+      
+      slider2.oninput = function() {
+        output2.innerHTML = this.value + "%";
+      }
+      </script>
 
 
     <div id="square1"></div>
@@ -411,9 +434,7 @@
     <div id="square6"></div>
     <div id="square7"></div>
     <div id="square8"></div>
-    <div id="deco-skills">
-      <img src="imagens/skillsimg.png">
-    </div>
+
   </div>
 
   </div>
