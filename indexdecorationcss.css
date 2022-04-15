@@ -1,0 +1,138 @@
+#container-skills #square1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 10%;
+    top: 150vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s linear;
+
+}
+
+@keyframes anime-square {
+    100%, 0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-100px);
+     
+    }
+}
+
+@keyframes girar-square {
+    0% {    
+        transform:rotateY(0deg);
+    }
+    100% {
+        transform:rotateY(360deg);
+    }
+
+}
+
+#container-skills #square2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 90%;
+    top: 180vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+
+}
+
+#container-skills #square3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 60%;
+    top: 185vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+animation-delay:1s;
+}
+
+
+#container-skills #square4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 80%;
+    top: 125vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+animation-delay:1s;
+}
+
+#container-skills #square5 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 95%;
+    top: 165vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+animation-delay:3s;
+}
+
+#container-skills #square6 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 5%;
+    top: 185vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+animation-delay:3s;
+}
+
+#container-skills #square7 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 95%;
+    top: 125vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+    animation-delay:4s;
+}
+
+#container-skills #square8 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    left: 90%;
+    top: 145vh;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 10px;
+    opacity: 0;
+    animation: anime-square 5s linear infinite, girar-square 5s;
+    animation-delay:4s;
+}
+
