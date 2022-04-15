@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 
 * {
     padding: 0;
@@ -234,12 +237,24 @@ a {
 
 /*   CONTAINER 2   */
 
+#cursor-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid pink; 
+    z-index: 10;
+}
 
 #container-skills {
     height: 100vh;
     width: 100%;
     background: linear-gradient(180deg, white,white,white, rgb(248, 77, 228));
     z-index: 10;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 #skills-top {
@@ -276,7 +291,11 @@ a {
    
 }
 
-
+#skills-card h3, p {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+}
 
 #container-skills::before {
     content: "";
@@ -327,6 +346,7 @@ input {
   #container-projetos {
       width: 100%;
       height: 100vh;
+    
   }
 
 
@@ -452,4 +472,42 @@ input[type="range"] {
 ::-ms-tooltip { 
     display: none;
     
+}
+
+
+
+
+
+
+#container-projetos {
+    background: linear-gradient(0deg,rgba(49, 130, 187, 0.447), rgba(32, 130, 236, 0.474));
+    border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#content-projetos {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+
+}
+
+#container-projetos h1 {
+    font-family: 'Josefin Sans';
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+#container-projetos p {
+    font-family: 'Square Peg';
+    font-size: 30px;
+    color: white;
+    width: 70%;
+
 }
