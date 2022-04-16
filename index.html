@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="initial-scale=1">
   <title>Matheus Zufi Portfolio</title>
   <link rel="stylesheet" href="indexcss.css">
   <link rel="stylesheet" href="indexdecorationcss.css">
   <script src="https://kit.fontawesome.com/c551bd4cf4.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-
-
+<!-- CURSOR PRINCIPAL -->
+<!-- CURSOR PRINCIPAL -->
   <div id="cursor-principal"></div>
   <div id="cursor1"></div>
   <div id="cursor2"></div>
@@ -35,289 +35,15 @@
   <div id="cursor18"></div>
   <div id="cursor19"></div>
   <div id="cursor20"></div>
+  <script src="indexscript.js">  </script>
 
-
-
+  <!-- CANVAS -->
+  <!-- CANVAS -->
   <canvas style="position: absolute; top: 0; z-index: 5; opacity: 1;"></canvas>
-
-  <script>
-
-    var cursorprincipal = document.getElementById('cursor-principal');
-    var cursor = document.getElementById('cursor1');
-    window.onmousemove = function (e) {
-
-      cursorprincipal.style.left = e.clientX + 'px';
-      cursorprincipal.style.top = e.clientY + 'px';
-
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-      var randNum = Math.floor(Math.random() * 200) - 100;
-      var randNum2 = Math.floor(Math.random() * 200) - 100;
-
-      cursor.style.left = e.clientX + randNum + 'px';
-      cursor.style.top = e.clientY + randNum2 + 'px';
-
-      //cursor 2
-      cursor2.style.left = e.clientX + 'px';
-      cursor2.style.top = e.clientY + 'px';
-
-      var randNum3 = Math.floor(Math.random() * 200) - 100;
-      var randNum4 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor2.style.left = e.clientX + randNum3 + 'px';
-      cursor2.style.top = e.clientY + randNum4 + 'px';
-
-      //cursor 3
-      cursor3.style.left = e.clientX + 'px';
-      cursor3.style.top = e.clientY + 'px';
-
-      var randNum5 = Math.floor(Math.random() * 200) - 100;
-      var randNum6 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor3.style.left = e.clientX + randNum5 + 'px';
-      cursor3.style.top = e.clientY + randNum6 + 'px';
-
-      //cursor 4
-      cursor4.style.left = e.clientX + 'px';
-      cursor4.style.top = e.clientY + 'px';
-
-      var randNum7 = Math.floor(Math.random() * 200) - 100;
-      var randNum8 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor4.style.left = e.clientX + randNum7 + 'px';
-      cursor4.style.top = e.clientY + randNum8 + 'px';
-
-      //cursor 5
-      cursor5.style.left = e.clientX + 'px';
-      cursor5.style.top = e.clientY + 'px';
-
-      var randNum9 = Math.floor(Math.random() * 200) - 100;
-      var randNum10 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor5.style.left = e.clientX + randNum9 + 'px';
-      cursor5.style.top = e.clientY + randNum10 + 'px';
-
-      //cursor 6
-      cursor6.style.left = e.clientX + 'px';
-      cursor6.style.top = e.clientY + 'px';
-
-      var randNum11 = Math.floor(Math.random() * 200) - 100;
-      var randNum12 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor6.style.left = e.clientX + randNum11 + 'px';
-      cursor6.style.top = e.clientY + randNum12 + 'px';
-
-      //cursor 7
-      cursor7.style.left = e.clientX + 'px';
-      cursor7.style.top = e.clientY + 'px';
-
-      var randNum13 = Math.floor(Math.random() * 200) - 100;
-      var randNum14 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor7.style.left = e.clientX + randNum13 + 'px';
-      cursor7.style.top = e.clientY + randNum14 + 'px';
-
-      //cursor 8
-      cursor8.style.left = e.clientX + 'px';
-      cursor8.style.top = e.clientY + 'px';
-
-      var randNum15 = Math.floor(Math.random() * 200) - 100;
-      var randNum16 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor8.style.left = e.clientX + randNum15 + 'px';
-      cursor8.style.top = e.clientY + randNum16 + 'px';
-
-      //cursor 9
-      cursor9.style.left = e.clientX + 'px';
-      cursor9.style.top = e.clientY + 'px';
-
-      var randNum17 = Math.floor(Math.random() * 200) - 100;
-      var randNum18 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor9.style.left = e.clientX + randNum17 + 'px';
-      cursor9.style.top = e.clientY + randNum18 + 'px';
-
-      //cursor 10
-      cursor10.style.left = e.clientX + 'px';
-      cursor10.style.top = e.clientY + 'px';
-
-      var randNum19 = Math.floor(Math.random() * 200) - 100;
-      var randNum20 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor10.style.left = e.clientX + randNum19 + 'px';
-      cursor10.style.top = e.clientY + randNum20 + 'px';
-
-      //cursor 11      
-      cursor11.style.left = e.clientX + 'px';
-      cursor11.style.top = e.clientY + 'px';
-
-      var randNum21 = Math.floor(Math.random() * 200) - 100;
-      var randNum22 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor11.style.left = e.clientX + randNum21 + 'px';
-      cursor11.style.top = e.clientY + randNum22 + 'px';
-
-      //cursor 12
-      cursor12.style.left = e.clientX + 'px';
-      cursor12.style.top = e.clientY + 'px';
-
-      var randNum23 = Math.floor(Math.random() * 200) - 100;
-      var randNum24 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor12.style.left = e.clientX + randNum23 + 'px';
-      cursor12.style.top = e.clientY + randNum24 + 'px';
-
-      //cursor 13
-      cursor13.style.left = e.clientX + 'px';
-      cursor13.style.top = e.clientY + 'px';
-
-      var randNum25 = Math.floor(Math.random() * 200) - 100;
-      var randNum26 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor13.style.left = e.clientX + randNum25 + 'px';
-      cursor13.style.top = e.clientY + randNum26 + 'px';
-
-      //cursor 14
-      cursor14.style.left = e.clientX + 'px';
-      cursor14.style.top = e.clientY + 'px';
-
-      var randNum27 = Math.floor(Math.random() * 200) - 100;
-      var randNum28 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor14.style.left = e.clientX + randNum27 + 'px';
-      cursor14.style.top = e.clientY + randNum28 + 'px';
-
-      //cursor 15
-      cursor15.style.left = e.clientX + 'px';
-      cursor15.style.top = e.clientY + 'px';
-
-      var randNum29 = Math.floor(Math.random() * 200) - 100;
-      var randNum30 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor15.style.left = e.clientX + randNum29 + 'px';
-      cursor15.style.top = e.clientY + randNum30 + 'px';
-
-      //cursor 16
-      cursor16.style.left = e.clientX + 'px';
-      cursor16.style.top = e.clientY + 'px';
-
-      var randNum31 = Math.floor(Math.random() * 200) - 100;
-      var randNum32 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor16.style.left = e.clientX + randNum31 + 'px';
-      cursor16.style.top = e.clientY + randNum32 + 'px';
-
-      //cursor 17
-      cursor17.style.left = e.clientX + 'px';
-      cursor17.style.top = e.clientY + 'px';
-
-      var randNum33 = Math.floor(Math.random() * 200) - 100;
-      var randNum34 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor17.style.left = e.clientX + randNum33 + 'px';
-      cursor17.style.top = e.clientY + randNum34 + 'px';
-
-      //cursor 18
-      cursor18.style.left = e.clientX + 'px';
-      cursor18.style.top = e.clientY + 'px';
-
-      var randNum35 = Math.floor(Math.random() * 200) - 100;
-      var randNum36 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor18.style.left = e.clientX + randNum35 + 'px';
-      cursor18.style.top = e.clientY + randNum36 + 'px';
-
-      //cursor 19
-      cursor19.style.left = e.clientX + 'px';
-      cursor19.style.top = e.clientY + 'px';
-
-      var randNum37 = Math.floor(Math.random() * 200) - 100;
-      var randNum38 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor19.style.left = e.clientX + randNum37 + 'px';
-      cursor19.style.top = e.clientY + randNum38 + 'px';
-
-      //cursor 20
-      cursor20.style.left = e.clientX + 'px';
-      cursor20.style.top = e.clientY + 'px';
-
-      var randNum39 = Math.floor(Math.random() * 200) - 100;
-      var randNum40 = Math.floor(Math.random() * 200) - 100;
-
-
-      cursor20.style.left = e.clientX + randNum39 + 'px';
-      cursor20.style.top = e.clientY + randNum40 + 'px';
-
-
-    }
-
-  </script>
-
-
-  <script>
-
-    var t = 0;
-    var c = document.querySelector("canvas");
-    var $ = c.getContext('2d');
-    c.width = window.innerWidth;
-    c.height = window.innerHeight;
-    $.fillStyle = 'hsla(0,0%,0%,1)';
-
-    window.addEventListener('resize', function () {
-      c.width = window.innerWidth;
-      c.height = window.innerHeight;
-    }, false);
-
-    function draw() {
-      $.globalCompositeOperation = 'source-over';
-      $.fillStyle = 'hsla(0,0%,0%,.1)';
-      $.fillRect(0, 0, c.width, c.height);
-      var foo, i, j, r;
-      foo = Math.sin(t) * 2 * Math.PI;
-      for (i = 0; i < 2000; ++i) {              // quantidade de particulas
-        r = 900 * Math.sin(i * foo);
-        $.globalCompositeOperation = '';
-        $.fillStyle = 'hsla(' + i + 12 + ',100%, 60%,1)';
-        $.beginPath();
-        $.arc(Math.sin(i) * r + (c.width / 2),
-          Math.cos(i) * r + (c.height / 2),
-          1.5, 0, Math.PI * 6000);
-        $.fill();
-      }
-      t += 0.00000059;    // velocidade das particulas
-    };
-    function run() {
-      window.requestAnimationFrame(run);
-      draw();
-    }
-    run();
-  </script>
-
+  <script src="canvasscript.js"></script>
 
   <!--        HTML     -->
   <!--        HTML     -->
-  <!--        HTML     -->
-  <!--        HTML     -->
-
-
   <div id="container">
 
     <div id="header">
@@ -354,11 +80,6 @@
 
       </div>
 
-
-
-
-
-
     </div>
 
   </div>
@@ -373,57 +94,78 @@
         elit. Dolor quos sapiente magni? Dolor quis voluptatem ea. Quae beatae cupiditate qui amet! Neque rem at
         nostrum. Dicta maxime aut pariatur commodi! </p>
     </div>
-    <div id="deco-skills">
-      <img src="imagens/skillsimg.png">
-    </div>
+ 
     <div id="skills-card">
 
-      <div id="card-html">
+      <div id="card-html" class="card-all">
         <h3>HTML</h3>
+        <i class="fa-brands fa-html5"></i>
         <p id="demoHtml"></p>
         <input name="html-percent" id="myRangeHtml" type="range" value="70">
       </div>
 
-      <div id="card-css">
+      <div id="card-css"class="card-all">
         <h3>CSS</h3>
+        <i class="fa-brands fa-css3-alt"></i>
         <p id="demoCss">%</p>
         <input type="range" id="myRangeCss" value="70">
       </div>
 
-      <div id="card-js">
+      <div id="card-js" class="card-all">
         <h3>JS</h3>
+        <i class="fa-brands fa-js-square"></i>
         <p>30%</p>
         <input type="range" value="30">
       </div>
-      <div id="card-html">
+
+      <div id="card-php" class="card-all">
         <h3>PHP</h3>
+        <i class="fa-brands fa-php"></i>
+        <p>20%</p>
+        <input type="range" value="20">
+      </div>
+
+      <div id="card-laravel" class="card-all">
+        <h3>Laravel</h3>
+        <i class="fa-brands fa-laravel"></i>
+        <p>20%</p>
+        <input type="range" value="20">
+      </div>
+
+      <div id="card-react" class="card-all">
+        <h3>React</h3>
+        <i class="fa-brands fa-react"></i>
+        <p>20%</p>
+        <input type="range" value="20">
+      </div>
+
+      <div id="card-python"class="card-all">
+        <h3>Python</h3>
+        <i class="fa-brands fa-python"></i>
+        <p>20%</p>
+        <input type="range" value="20">
+      </div>
+
+      <div id="card-bootstrap" class="card-all">
+        <h3>Bootstrap</h3>
+        <i class="fa-brands fa-bootstrap"></i>
         <p>20%</p>
         <input type="range" value="20">
       </div>
 
       <button id="btn-content">Projetos Futuros</button>
 
-    </div>
-
-    <script>
-      var slider = document.getElementById("myRangeHtml");
-      var output = document.getElementById("demoHtml");
-      output.innerHTML = slider.value + "%";
-      
-      slider.oninput = function() {
-        output.innerHTML = this.value + "%";
-      }
-
-      var slider2 = document.getElementById("myRangeCss");
-      var output2 = document.getElementById("demoCss");
-      output2.innerHTML = slider.value + "%";
-      
-      slider2.oninput = function() {
-        output2.innerHTML = this.value + "%";
-      }
-      </script>
+<!-- SCRIPT INPUT -->
+<!-- SCRIPT INPUT -->
+    <script src="inputscript.js"></script>
+<!-- SCRIPT INPUT -->
+<!-- SCRIPT INPUT -->
 
 
+</div>
+<div id="deco-skills">
+  <img src="imagens/skillsimg.png">
+</div>
     <div id="square1"></div>
     <div id="square2"></div>
     <div id="square3"></div>
@@ -437,6 +179,8 @@
 
   </div>
 
+
+  
   <div id="container-projetos">
     <h1> Projetos</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis cupiditate adipisci blanditiis quibusdam molestiae rem deserunt aspernatur consectetur facilis beatae voluptatem vel modi possimus laudantium fugiat, architecto fuga qui?</p>
