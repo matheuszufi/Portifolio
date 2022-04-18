@@ -559,3 +559,13 @@ input[type="range"] {
     width: 70%;
 
 }
+
+
+.text {
+    -webkit-box-reflect: below -0.46em linear-gradient(transparent, #0004);
+}
+
+.text span {
+    position: relative;
+    display: inline-block;
+}

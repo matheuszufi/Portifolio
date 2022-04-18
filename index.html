@@ -70,12 +70,48 @@
         <!-- <div id="container-matheus"> <img style="width: 50%;"src="matheus.png"> </div> -->
       </div>
       <div id="container-hero-right">
-        <h1>Matheus Zufi Leite Portifolio</h1>
+        <h1 class="text">Matheus Zufi Leite Portifolio</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste eveniet nisi assumenda, ipsum hic,
           sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
         <button>Conheça mais o meu trabalho</button>
 
       </div>
+
+
+      <script src="anime.min.js"></script>
+      <script>
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+
+        anime.timeline ({
+          loop: true
+        })
+
+        .add({
+          targets: '.text span',
+          translateY: [-600, 0],    //[valor inicial, valor final]
+          scale: [10,1],
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 1500,
+          delay: anime.stagger(100),
+
+        })
+
+        .add({
+          targets: '.text span',
+          translateY: [0, -1000],    //[valor inicial, valor final]
+          scale: [1,1],
+          opacity: [1,0],
+          easing: "easeOutExpo",
+          duration: 2000,
+          delay: anime.stagger(100),
+
+        })
+      </script>
+
+
 
     </div>
 
