@@ -53,7 +53,7 @@
       <div id="header-menu">
         <ul>
           <li class="lista"><a href="#container-hero">Home</a></li>
-          <li class="lista"><a href="#container-skills">Skills</a></li>
+          <li class="lista"><a href="#container-sobre">Sobre</a></li>
           <li class="lista"><a href="#container-projetos">Projetos</a></li>
         </ul>
       </div>
@@ -117,76 +117,45 @@
 
   </div>
 
-<!-- CONTAINER SKILLS -->
-  <div id="container-skills">
-    <div id="cursor-skills"></div>
-    <div id="skills-top">
-      <br>
-      <h1>Skills</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Dolor quos sapiente magni? Dolor quis voluptatem ea. Quae beatae cupiditate qui amet! Neque rem at
-        nostrum. Dicta maxime aut pariatur commodi! </p>
-    </div>
- 
-    <div id="skills-card">
 
-      <div id="card-html" class="card-all">
-        <h3>HTML</h3>
-        <i class="fa-brands fa-html5"></i>
-        <p id="demoHtml"></p>
-        <input name="html-percent" id="myRangeHtml" type="range" value="70">
-      </div>
 
-      <div id="card-css"class="card-all">
-        <h3>CSS</h3>
-        <i class="fa-brands fa-css3-alt"></i>
-        <p id="demoCss">%</p>
-        <input type="range" id="myRangeCss" value="70">
-      </div>
+<!-- CONTAINER SOBRE --> 
 
-      <div id="card-js" class="card-all">
-        <h3>JS</h3>
-        <i class="fa-brands fa-js-square"></i>
-        <p>30%</p>
-        <input type="range" value="30">
-      </div>
+<div id="container-sobre">
+  <div id="content-cor">
+    <p> Que tal mudar a cor do site?</p>
+    <button onclick="mudarCor();" id="btn-color">MUDAR!</button>
+    <input id="seletorDeCor" type="color">
+   
+    <script>
+      function mudarCor(){
+      let color = document.getElementById('seletorDeCor').value;
+      document.getElementById('container-sobre').style.backgroundColor = color;
+    }
+    </script>
+    <br>
+    <p>Escolha a cor</p>  
+  </div>
 
-      <div id="card-php" class="card-all">
-        <h3>PHP</h3>
-        <i class="fa-brands fa-php"></i>
-        <p>20%</p>
-        <input type="range" value="20">
-      </div>
+  <div id="content-sobre">
+    <h1>Olá, me chamo Matheus,</h1>
+    <p>Tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
+    <p>Esta área me chamou a atenção porque ela gosto de criar, inovar e usar a imaginação.</p>
+  
+    <h2>Começei a programar</h2>
+    <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para aprender.</p>
 
-      <div id="card-laravel" class="card-all">
-        <h3>Laravel</h3>
-        <i class="fa-brands fa-laravel"></i>
-        <p>0%</p>
-        <input type="range" value="0">
-      </div>
+    <h2></h2>
+    
+  </div>
 
-      <div id="card-react" class="card-all">
-        <h3>React</h3>
-        <i class="fa-brands fa-react"></i>
-        <p>20%</p>
-        <input type="range" value="20">
-      </div>
 
-      <div id="card-python"class="card-all">
-        <h3>Python</h3>
-        <i class="fa-brands fa-python"></i>
-        <p>0%</p>
-        <input type="range" value="0">
-      </div>
+</div>
 
-      <div id="card-bootstrap" class="card-all">
-        <h3>Bootstrap</h3>
-        <i class="fa-brands fa-bootstrap"></i>
-        <p>20%</p>
-        <input type="range" value="20">
-      </div>
 
-      <button id="btn-content">Projetos Futuros</button>
+
+
+
 
 <!-- SCRIPT INPUT -->
 <!-- SCRIPT INPUT -->
@@ -208,6 +177,9 @@
     <div id="square8"></div>
 
   </div>
+
+
+
 
   </div>
 
