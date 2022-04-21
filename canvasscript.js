@@ -26,10 +26,17 @@ var t = 0;
           1.5, 0, Math.PI * 6000);
         $.fill();
       }
-      t += 0.00000059;    // velocidade das particulas
+      t += 0.000000159;    // velocidade das particulas
+      document.querySelector("canvas").onmousemove = (e) =>{
+        t = t + 0.0000005;
+   
+      } 
+  
+
     };
     function run() {
       window.requestAnimationFrame(run);
       draw();
     }
+    
     run();
