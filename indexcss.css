@@ -270,11 +270,11 @@ a {
 }
 
 #container-sobre-2 h4 {
-    color: rgba(243, 0, 0, 0.749);
+    color: rgb(255, 79, 79);
     font-size: 48px;
     text-transform: uppercase;
     font-family: 'Poppins';
-    text-shadow: 2px 2px 2px rgba(152, 152, 152, 0.601);
+    text-shadow: 2px 2px 2px rgba(122, 152, 152, 0.601);
 }
   
 #content-cor {
@@ -286,7 +286,7 @@ a {
 }
 
 #content-cor p {
-    color: rgb(255, 0, 0);
+    color: rgb(119, 119, 119);
     text-shadow: 1px 1px 1px rgb(141, 140, 140);
     font-family: 'Josefin Sans';
     margin-right: 30px;
@@ -304,7 +304,7 @@ a {
 }
 
 #content-cor button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #content-cor input {
@@ -339,6 +339,10 @@ input[type="color"]::-webkit-color-swatch {
     width: 50%;
     display: flex;
     justify-content: center;
+}
+#content-sobre #left img {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
 }
 
 #content-sobre #right {
@@ -506,7 +510,7 @@ input[type="range"] {
 
 
 #container-projetos {
-    background: linear-gradient(0deg,rgba(49, 130, 187, 0.447), rgba(32, 130, 236, 0.474));
+    background: rgb(73, 73, 73);
     border: 1px solid black;
    display: flex;
    flex-direction: column;

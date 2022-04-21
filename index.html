@@ -39,7 +39,7 @@
 
   <!-- CANVAS -->
   <!-- CANVAS -->
-  <canvas style="position: absolute; top: 0; z-index: 5; opacity: 1;"></canvas>
+  <canvas style="position: absolute; top: 0; z-index: 5; opacity: 1; overflow: hidden;"></canvas>
   <script src="canvasscript.js"></script>
 
   <!--        HTML     -->
@@ -74,7 +74,7 @@
         <h1 class="text-nome">Matheus Zufi Leite Portifolio</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste eveniet nisi assumenda, ipsum hic,
           sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
-        <button>Conheça mais o meu trabalho</button>
+        <button><a href="#container-sobre-2">Conheça mais o meu trabalho</a></button>
 
       </div>
 
@@ -125,7 +125,7 @@
 <div id="container-sobre">
   <div id="content-cor">
    
-    <p> Que tal mudar a cor do site?</p>
+    <p> Que tal mudar a cor dessa div?</p>
     <button onclick="mudarCor();" id="btn-color">MUDAR!</button>
     <input id="seletorDeCor" type="color">
    
@@ -146,20 +146,24 @@
       <img src="matheus.jpg">
     </div>
     <div id="right">
-      <h4>Sobre mim</h4><br><br>
+      <h4>Sobre</h4><br><br>
       <h1>Olá, me chamo Matheus,</h1>
-      <p>Tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
-      <p>Esta área me chamou a atenção porque ela gosto de criar, inovar e usar a imaginação.</p>
+      <p>tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
+      <p>Esta área me chamou a atenção porque gosto de criar, inovar e usar a imaginação.</p>
       <br><br>
       <h2>Começei a programar</h2>
       <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para aprender.</p>
 
     </div>
       
+
+
 </div>
   </div>
     <section>
+    
       <div id="container-skills">
+
           <div class="card">
               <div class="box">
                   <div>
@@ -203,7 +207,7 @@
                               <circle cx="70" cy="70" r="70"></circle>
                           </svg>
                           <div class="number">
-                              <h2>40<span>%</span></h2>
+                              <h2>30<span>%</span></h2>
                           </div>
                       </div>
                   </div>
@@ -211,6 +215,39 @@
               <div class="text">Javascript</div>
           </div>
 
+          <div class="card">
+            <div class="box">
+                <div>
+                    <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>20<span>%</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">PHP</div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+              <div>
+                  <div class="percent">
+                      <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                          <h2>40<span>%</span></h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="text">REACT</div>
+      </div>
 
 
 
