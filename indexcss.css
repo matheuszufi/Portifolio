@@ -251,14 +251,21 @@ a {
 }
 
 #container-sobre {
-    height: 150vh;
+   text-align: center;
     width: 100%;
     background-color: white;
     z-index: 10;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    color: rgb(134, 0, 196);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-
+#container-sobre-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
   
 #content-cor {
     width: 100%;
@@ -269,8 +276,8 @@ a {
 }
 
 #content-cor p {
-    color: rgb(73, 73, 73);
-    text-shadow: 1px 1px 1px rgb(82, 82, 82);
+    color: rgb(138, 0, 183);
+    text-shadow: 1px 1px 1px rgb(141, 140, 140);
     font-family: 'Josefin Sans';
     margin-right: 30px;
     font-weight: 800;
@@ -309,7 +316,28 @@ input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
 
+#content-sobre {
+    display: flex;
+    width: 100%;
 
+}
+
+#content-sobre #left {
+
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content-sobre #right {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #content-sobre h1 {
     font-family: 'Josefin Sans';
@@ -500,11 +528,11 @@ input[type="range"] {
 }
 
 
-.text {
+.text-nome {
     -webkit-box-reflect: below -0.46em linear-gradient(transparent, #0004);
 }
 
-.text span {
+.text-nome span {
     position: relative;
     display: inline-block;
 }

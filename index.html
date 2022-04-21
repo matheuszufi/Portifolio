@@ -6,6 +6,7 @@
   <title>Matheus Zufi Portfolio</title>
   <link rel="stylesheet" href="indexcss.css">
   <link rel="stylesheet" href="indexdecorationcss.css">
+  <link rel="stylesheet" href="indexskills.css">
   <script src="https://kit.fontawesome.com/c551bd4cf4.js" crossorigin="anonymous"></script>
 
 </head>
@@ -70,7 +71,7 @@
         <!-- <div id="container-matheus"> <img style="width: 50%;"src="matheus.png"> </div> -->
       </div>
       <div id="container-hero-right">
-        <h1 class="text">Matheus Zufi Leite Portifolio</h1>
+        <h1 class="text-nome">Matheus Zufi Leite Portifolio</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste eveniet nisi assumenda, ipsum hic,
           sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
         <button>Conheça mais o meu trabalho</button>
@@ -80,7 +81,7 @@
 
       <script src="anime.min.js"></script>
       <script>
-        const text = document.querySelector('.text');
+        const text = document.querySelector('.text-nome');
         text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
 
@@ -89,7 +90,7 @@
         })
 
         .add({
-          targets: '.text span',
+          targets: '.text-nome span',
           translateY: [-600, 0],    //[valor inicial, valor final]
           scale: [10,1],
           opacity: [0,1],
@@ -100,7 +101,7 @@
         })
 
         .add({
-          targets: '.text span',
+          targets: '.text-nome span',
           translateY: [0, -1000],    //[valor inicial, valor final]
           scale: [1,1],
           opacity: [1,0],
@@ -123,6 +124,7 @@
 
 <div id="container-sobre">
   <div id="content-cor">
+   
     <p> Que tal mudar a cor do site?</p>
     <button onclick="mudarCor();" id="btn-color">MUDAR!</button>
     <input id="seletorDeCor" type="color">
@@ -136,51 +138,94 @@
     <br>
     <p>Escolha a cor</p>  
   </div>
+</div>
 
+<div id="container-sobre-2">
   <div id="content-sobre">
-    <h1>Olá, me chamo Matheus,</h1>
-    <p>Tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
-    <p>Esta área me chamou a atenção porque ela gosto de criar, inovar e usar a imaginação.</p>
+    <div id="left">
+      <img src="matheus.jpg">
+    </div>
+    <div id="right">
+      <h1>Olá, me chamo Matheus,</h1>
+      <p>Tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
+      <p>Esta área me chamou a atenção porque ela gosto de criar, inovar e usar a imaginação.</p>
   
-    <h2>Começei a programar</h2>
-    <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para aprender.</p>
+      <h2>Começei a programar</h2>
+      <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para aprender.</p>
 
-  
-  
-  
-  
-  
-  
+    </div>
+      
+</div>
   </div>
+    <section>
+      <div id="container-skills">
+          <div class="card">
+              <div class="box">
+                  <div>
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>85<span>%</span></h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="text">Html</div>
+          </div>
+          
+          <div class="card">
+              <div class="box">
+                  <div>
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>80<span>%</span></h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="text">Css</div>
+          </div>
+
+          <div class="card">
+              <div class="box">
+                  <div>
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>40<span>%</span></h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="text">Javascript</div>
+          </div>
+
+
+
+
+
+      </div>
+  </section>
+  
+
+  
+  
+
+
+
+
 
 </div>
-
-
-
-
-
-
-<!-- SCRIPT INPUT -->
-<!-- SCRIPT INPUT -->
-    <script src="inputscript.js"></script>
-<!-- SCRIPT INPUT -->
-<!-- SCRIPT INPUT -->
-
-</div>
-<div id="deco-skills">
-  <img src="imagens/skillsimg.png">
-</div>
-    <div id="square1"></div>
-    <div id="square2"></div>
-    <div id="square3"></div>
-    <div id="square4"></div>
-    <div id="square5"></div>
-    <div id="square6"></div>
-    <div id="square7"></div>
-    <div id="square8"></div>
-
-  </div>
-
 
 
 
