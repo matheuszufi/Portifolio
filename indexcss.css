@@ -425,146 +425,49 @@ input[type="color"]::-webkit-color-swatch {
       text-shadow: 1px 1px 3px black;
     
   }
-#deco-skills {
-    position: absolute;
-    bottom: -100.6%;
-    opacity: 0.5;
-    left: -250px;
-    z-index: -1;
-}
 
 
 
 
-
-input[type='range'] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    
-}
-    
-
-  
-  
-input[type="range"] { 
-    margin: auto;
-    -webkit-appearance: none;
-    position: relative;
-    overflow: hidden;
-    height: 10px;
-    width: 20vw;
-    cursor: pointer;
-    border-radius: 2px; /* iOS */
-    
-}
-
-::-webkit-slider-runnable-track {
-    background: #ddd;
-    
-}
 
 /*
- * 1. Set to 0 width and remove border for a slider without a thumb
- */
-::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px; /* 1 */
-    height: 10px;
-    background: #fff;
-    box-shadow: -100vw 0 0 100vw rgb(251, 30, 255);
-    border: 2px solid #999; /* 1 */
-    border-radius: 2px;
-    
-}
-
-::-moz-range-track {
-    height: 40px;
-    background: #ddd;
-    
-}
-
-::-moz-range-thumb {
-    background: #fff;
-    height: 40px;
-    width: 20px;
-    border: 3px solid #999;
-    border-radius: 0 !important;
-    box-shadow: -100vw 0 0 100vw rgb(129, 133, 136);
-    box-sizing: border-box;
-    
-    
-}
-
-
-
-::-ms-thumb { 
-    background: #fff;
-    border: 2px solid #999;
-    height: 40px;
-    width: 20px;
-    box-sizing: border-box;
-    
-}
-
-::-ms-ticks-after { 
-    display: none; 
-    
-}
-
-::-ms-ticks-before { 
-    display: none; 
-}
-
-::-ms-track { 
-    background: #ddd;
-    color: transparent;
-    height: 40px;
-    border: none;
-    
-}
-
-::-ms-tooltip { 
-    display: none;
-    
-}
-
-
-
-
-
+*
+*  projetos
+*
+**/
 
 #container-projetos {
-    background: rgb(73, 73, 73);
-    border: 1px solid black;
+    background: linear-gradient(#ff93b3bf, #ffffffbf, #ffffffbf,  #ffffffbf);
+
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
 }
 
 
 #content-projetos {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
+    background-color: rgba(141, 141, 141, 0.39);
+    width: 80%;
     height: 50%;
+    display: flex;
+overflow-x: scroll;
     border-radius: 15px;
-
 }
 
 #container-projetos h1 {
     font-family: 'Josefin Sans';
-    color: white;
+    color: rgb(49, 49, 49);
     text-shadow: 1px 1px 2px black;
 
 }
 
 #container-projetos p {
-    font-family: 'Square Peg';
-    font-size: 30px;
-    color: white;
-    width: 70%;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+
 
 }
 
@@ -576,4 +479,40 @@ input[type="range"] {
 .text-nome span {
     position: relative;
     display: inline-block;
+}
+
+.projetos {
+    background-color: rgba(94, 109, 122, 0.281);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-right: 1px solid black;
+    height: 100%;
+}
+.projetos .foto-projetos { 
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+width: 100%;
+justify-content: center;
+
+
+}
+
+#container-projetos .projetos .descricao-projetos p {
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+}
+
+.foto-projetos img {
+width: 200px;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+.descricao-projetos h5 { 
+    font-size: 20px;
+    font-family: 'Poppins';
 }
