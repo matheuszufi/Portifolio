@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1">
@@ -12,8 +13,8 @@
 </head>
 
 <body>
-<!-- CURSOR PRINCIPAL -->
-<!-- CURSOR PRINCIPAL -->
+  <!-- CURSOR PRINCIPAL -->
+  <!-- CURSOR PRINCIPAL -->
   <div id="cursor-principal"></div>
   <div id="cursor1"></div>
   <div id="cursor2"></div>
@@ -69,7 +70,7 @@
     <div id="container-hero">
       <div id="container-hero-left">
         <button id="divertir">DIVIRTA-SE<br><i class="fa-solid fa-gamepad"></i></button>
-       <p>Mexa o mouse para acelerar a velocidade das particulas!</p>
+        <p>Mexa o mouse para acelerar a velocidade das particulas!</p>
         <!-- <div id="container-matheus"> <img style="width: 50%;"src="matheus.png"> </div> -->
       </div>
       <div id="container-hero-right">
@@ -77,224 +78,210 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste eveniet nisi assumenda, ipsum hic,
           sapiente tempore eius, quo minus provident repellat! Expedita doloribus eos vitae quas, nam eaque esse.</p>
         <button><a href="#container-sobre-2">Conheça mais o meu trabalho</a></button>
-    
-          <script>
-            var curs = document.getElementById('cursor-principal');
-            var torus = document.querySelector("canvas");
-            var botaoDivertir = document.getElementById('divertir');
-          
-            botaoDivertir.onclick = (a) =>{
-              torus.style.zIndex = 30;
-              curs.style.zIndex = 31;
- 
-            }
 
-          
-          </script>
-          
-      
+        <script>
+          var curs = document.getElementById('cursor-principal');
+          var torus = document.querySelector("canvas");
+          var botaoDivertir = document.getElementById('divertir');
 
+          botaoDivertir.onclick = (a) => {
+            torus.style.zIndex = 30;
+            curs.style.zIndex = 31;
 
+          }
 
+        </script>
 
       </div>
-
 
       <script src="anime.min.js"></script>
       <script>
         const text = document.querySelector('.text-nome');
         text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
-
-        anime.timeline ({
+        anime.timeline({
           loop: true
         })
 
-        .add({
-          targets: '.text-nome span',
-          translateY: [-600, 0],    //[valor inicial, valor final]
-          scale: [10,1],
-          opacity: [0,1],
-          easing: "easeOutExpo",
-          duration: 1500,
-          delay: anime.stagger(100),
+          .add({
+            targets: '.text-nome span',
+            translateY: [-600, 0],    //[valor inicial, valor final]
+            scale: [10, 1],
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1500,
+            delay: anime.stagger(100),
 
-        })
+          })
 
-        .add({
-          targets: '.text-nome span',
-          translateY: [0, -1000],    //[valor inicial, valor final]
-          scale: [1,1],
-          opacity: [1,0],
-          easing: "easeOutExpo",
-          duration: 2000,
-          delay: anime.stagger(100),
+          .add({
+            targets: '.text-nome span',
+            translateY: [0, -1000],    //[valor inicial, valor final]
+            scale: [1, 1],
+            opacity: [1, 0],
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: anime.stagger(100),
 
-        })
+          })
       </script>
 
 
 
     </div>
-    </div>
-
-
-
-<!-- CONTAINER SOBRE --> 
-
-<div id="container-sobre">
-  <div id="content-cor">
-   
-    <p> Que tal mudar a cor dessa DIV ?</p>
-    <button onclick="mudarCor();" id="btn-color">MUDAR!</button>
-    <input id="seletorDeCor" type="color">
-   
-    <script>
-      function mudarCor(){
-      let color = document.getElementById('seletorDeCor').value;
-      document.getElementById('container-sobre').style.backgroundColor = color;
-    }
-    </script>
-    <br>
-    <p>Escolha a cor</p>  
   </div>
-</div>
 
-<div id="container-sobre-2">
-  <div id="content-sobre">
-    <div id="left">
-      <img src="matheus.jpg">
+
+
+  <!-- CONTAINER SOBRE -->
+
+  <div id="container-sobre">
+    <div id="content-cor">
+
+      <p> Que tal mudar a cor dessa DIV ?</p>
+      <button onclick="mudarCor();" id="btn-color">MUDAR!</button>
+      <input id="seletorDeCor" type="color">
+
+      <script>
+        function mudarCor() {
+          let color = document.getElementById('seletorDeCor').value;
+          document.getElementById('container-sobre').style.backgroundColor = color;
+        }
+      </script>
+      <br>
+      <p>Escolha a cor</p>
     </div>
-    <div id="right">
-      <h4>Sobre</h4><br><br>
-      <h1>Olá, me chamo Matheus,</h1>
-      <p>tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar  a nossa vida.</p>
-      <p>Esta área me chamou a atenção porque gosto de criar, inovar e usar a imaginação.</p>
-      <br><br>
-      <h2>Começei a programar</h2>
-      <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para aprender.</p>
-
-    </div>
-      
-
-
-</div>
   </div>
-    <section>
-    
-      <div id="container-skills">
 
-          <div class="card">
-              <div name="vanila" class="box">
-                  <div>
-                      <div class="percent">
-                          <svg>
-                              <circle cx="70" cy="70" r="70"></circle>
-                              <circle cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                              <h2>85<span>%</span></h2>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="text">Html</div>
-          </div>
-          
-          <div class="card">
-              <div name="vanila" class="box">
-                  <div>
-                      <div class="percent">
-                          <svg>
-                              <circle cx="70" cy="70" r="70"></circle>
-                              <circle cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                              <h2>80<span>%</span></h2>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="text">Css</div>
-          </div>
+  <div id="container-sobre-2">
+    <div id="content-sobre">
+      <div id="left">
+        <img src="matheus.jpg">
+      </div>
+      <div id="right">
+        <h4>Sobre</h4><br><br>
+        <h1>Olá, me chamo Matheus,</h1>
+        <p>tenho 26 anos, moro em Londrina - PR. Escolhi a área da técnologia por achar incrível a possibilidade de
+          coisas que conseguimos fazer com a tecnologia, e como ela podem e muito facilitar a nossa vida.</p>
+        <p>Esta área me chamou a atenção porque gosto de criar, inovar e usar a imaginação.</p>
+        <br><br>
+        <h2>Começei a programar</h2>
+        <p>em outubro de 2021, começei assistindo videos do Guanaraba, após pegar uma base passei a comprar varios
+          cursos na Udemy, ver varios videos no Youtube e entrei em grupos de programadores no Facebook e WhatsApp para
+          aprender.</p>
 
-          <div class="card">
-              <div name="vanila" class="box">
-                  <div>
-                      <div class="percent">
-                          <svg>
-                              <circle cx="70" cy="70" r="70"></circle>
-                              <circle cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                              <h2>30<span>%</span></h2>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="text">Javascript</div>
-          </div>
+      </div>
 
-          <div class="card">
-            <div name="vanila" class="box">
-                <div>
-                    <div class="percent">
-                        <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h2>20<span>%</span></h2>
-                        </div>
-                    </div>
-                </div>
+    </div>
+  </div>
+  <section>
+
+    <div id="container-skills">
+
+      <div class="card">
+        <div name="vanila" class="box">
+          <div>
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>85<span>%</span></h2>
+              </div>
             </div>
-            <div class="text">PHP</div>
-        </div>
-
-        <div  class="card">
-          <div name="vanila" class="box">
-              <div>
-                  <div class="percent">
-                      <svg>
-                          <circle cx="70" cy="70" r="70"></circle>
-                          <circle cx="70" cy="70" r="70"></circle>
-                      </svg>
-                      <div class="number">
-                          <h2>40<span>%</span></h2>
-                      </div>
-                  </div>
-              </div>
           </div>
-          <div class="text">REACT</div>
+        </div>
+        <div class="text">Html</div>
+      </div>
+
+      <div class="card">
+        <div name="vanila" class="box">
+          <div>
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>80<span>%</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">Css</div>
+      </div>
+
+      <div class="card">
+        <div name="vanila" class="box">
+          <div>
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>30<span>%</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">Javascript</div>
+      </div>
+
+      <div class="card">
+        <div name="vanila" class="box">
+          <div>
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>20<span>%</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">PHP</div>
+      </div>
+
+      <div class="card">
+        <div name="vanila" class="box">
+          <div>
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>40<span>%</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">REACT</div>
       </div>
 
       <script type="text/javascript" src="vanilla-tilt.js"></script>
-  
+
       <script>
         VanillaTilt.init(document.getElementsByName('vanila'), {
-      max: 30,
-      speed: 1500,
-    
-      });
+          max: 30,
+          speed: 1500,
+
+        });
       </script>
 
 
 
 
 
-      </div>
+    </div>
   </section>
-  
-
-  
-  
 
 
-
-
-
-</div>
+  </div>
 
 
 
@@ -302,12 +289,14 @@
 
   <div id="container-projetos">
     <h1> Projetos</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis cupiditate adipisci blanditiis quibusdam molestiae rem deserunt aspernatur consectetur facilis beatae voluptatem vel modi possimus laudantium fugiat, architecto fuga qui?</p>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis cupiditate adipisci blanditiis quibusdam
+      molestiae rem deserunt aspernatur consectetur facilis beatae voluptatem vel modi possimus laudantium fugiat,
+      architecto fuga qui?</p>
+
     <div id="content-projetos">
 
     </div>
- 
+
   </div>
 
 </body>
